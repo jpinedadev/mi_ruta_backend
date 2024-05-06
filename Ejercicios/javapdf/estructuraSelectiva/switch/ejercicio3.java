@@ -29,6 +29,8 @@ public class ejercicio3 {
     System.out.println("25         Africa");
     System.out.println("29         Oceania");
     System.out.println("***************************");
+
+    System.out.print("Elige una opcion: ");
     
   }
 }
