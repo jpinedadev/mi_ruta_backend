@@ -17,6 +17,8 @@ import java.util.Scanner;
 
 public class ejercicio3 {
   public static void main(String[] args) {
+    int cZona;
+    double minutos,costo;
     Scanner teclado = new Scanner(System.in);
 
     System.out.println("***************************");
@@ -30,7 +32,40 @@ public class ejercicio3 {
     System.out.println("29         Oceania");
     System.out.println("***************************");
 
-    System.out.print("Elige una opcion: ");
+    System.out.print("Ingrese la clave de la zona: ");
+    cZona = teclado.nextInt();
+    System.out.print("Ingrese los minutos: ");
+    minutos = teclado.nextDouble();
+
+    switch (cZona) {
+      case 12:
+        costo = minutos*2;
+        break;
+      case 15:
+        costo = minutos*2.2;
+        break;
+      case 18:
+        costo = minutos*4.5;
+        break;
+      case 19:
+        costo = minutos*3.5;
+        break;
+      case 23:
+        costo = minutos*6;
+        break;
+      case 25:
+        costo = minutos*6;
+        break;
+      case 29:
+        costo = minutos*5;
+        break;
+      default:
+        System.out.println("clave invalida xxxxx");
+        costo = minutos;
+        break;
+    }
+
+    System.out.println("Costo total de la llamada segun la zona es: "+costo);
     
   }
-}
+};
