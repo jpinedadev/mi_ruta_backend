@@ -14,6 +14,7 @@ public class salir {
     String palabra = teclado.next();
 
    //realizando el proceso 
+   //!palabra.equals = mientras palabra sea DIFERENTE de "salir" hacer esto
    while (!palabra.equals("salir")) {
     System.out.println("Ingrese una palabra");
     palabra = teclado.next();
