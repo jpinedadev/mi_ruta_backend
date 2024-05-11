@@ -12,10 +12,10 @@ public class totalapagar {
     Scanner teclado = new Scanner(System.in);
     System.out.print("Ingrese la cantidad: ");
     int cantidad = teclado.nextInt();
-    System.out.print("Ingrese el valor: ");
+       System.out.print("Ingrese el valor: ");
     int valor = teclado.nextInt();
 
-    //calculando el proceso 
+    //calculando el presentandooceso 
     int pvp = cantidad*valor;
 
     //presentando datos 
